@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chipsets</title>
-    <link rel="stylesheet" href="chipset syle.css">
+    <link rel="stylesheet" href="chipset stle.css">
 </head>
 <body>
-
     
 
 <!--navigation bar-->
 <div class="navbar">
-    <h2>idk tech</h2>
-    <a href="#">home</a>
-    <a href="#">latest devices</a>
-    <a href="#">chipsets</a>
-    <a href="#">compare</a>
-    <a href="#">settings</a>
+    <div class="brand">
+        <h2>idk tech</h2>
+    </div>
+
+    <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Latest devices</a>
+        <a href="chipsets.html">Chipsets</a>
+        <a href="#">Compare</a>
+        <a href="#">Settings</a>
+    </nav>
 </div>
 
-<!--main content area(ill fill things in later)-->
+<!--main content area(ill fill things in later)--> 
 <div class="main-content">
-    
-<h2>heres empty too for now lol</h2>
+   <h1>empty for now</h1>
+
 
 </div>
+
+<script>
+// mobile nav toggle
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', isOpen);
+});
+</script>
 
 </body>
 </html>
