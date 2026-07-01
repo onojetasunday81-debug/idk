@@ -9,6 +9,7 @@
 /*the navbar*/
 .navbar{
     width: 100%;      /*width of side menu*/
+    background-size: 100%; 
     background-color:black;
     padding: 25px 40px;
     display:flex;
